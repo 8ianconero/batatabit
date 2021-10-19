@@ -1,0 +1,66 @@
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+
+    & img{
+        width: 150px;
+        height: 24px;
+        margin-top: 60px;
+        align-self: center;
+    }
+
+    .header__container{
+        width: 90%;
+        min-height: 210px;
+        max-width: 900px;
+        height: 218px;
+        margin-top: 40px;
+        text-align: center;
+        align-self: center;
+
+        & h1{
+            margin-bottom: 24px;
+        }
+
+        & p{
+            color: $soft-orange;
+        }
+        & a{
+            position: absolute;
+            top:270px;
+            display: block;
+            padding: 15px;
+            width: 229px;
+            height: 48px;
+            margin-top: 35px;
+            background-color: $off-white;
+            align-self: center;
+            box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+            border: none;
+            border-radius: 5px;
+            font-family: "DM Sans", sans-serif;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: $black;
+            left: 50%;
+            transform: translateX(-50%);
+
+            & span{
+                display: inline-block;
+                width: 13px;
+                height: 8px;
+                margin-left: 10px;
+                background-image: url('/assets/icons/down-arrow.svg');
+            }
+        }
+    }
+
+}
